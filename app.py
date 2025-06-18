@@ -2,11 +2,11 @@
 
 import streamlit as st
 import pandas as pd
-import pickle
+import joblib
 
 # Load model
 with open("model_graduation.pkl", "rb") as file:
-    model = pickle.load(file)
+    model = joblib.load(file)
 
 # Judul Aplikasi
 st.title("Prediksi Kelulusan Mahasiswa (On Time / Late)")
